@@ -40,7 +40,7 @@ var todoList = {
     completed: false   // Boolean value's either true or false
 }
 
-!true changes to false !false changes to ture, using bang operator(!)
+!true changes to false !false changes to true, using bang operator(!)
 
 //todoList.toggleCompleted should change the completed property set to true or false
 

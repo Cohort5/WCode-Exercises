@@ -1,4 +1,4 @@
-VSix toggle all todos
+//VSeven ggle all todos
 //toggleAll: If everything is true, make everything false. checked and unchecked
 //toggleAll: Otherwise, make everything true. checked. need to write code for each scenario
 
@@ -64,3 +64,16 @@ todos: [],
   this.displayTodos();
  }  
 };
+
+//1. We want to get access to the displaysTodos button.
+var displayTodosButton = document.getElementById("displayTodosButton");
+var toggleAllButton = document.getElementById("toggleAllButton");
+
+//2. We want to run the displayTodos method, when someon clikcs the dispayTodos button.
+displayTodosButton.addEventListener("click" , function() {
+    todoList.displayTodos();
+});
+
+toggleAllButton.addEventListener("click" , function() {
+    todoList.toggleAll();
+});
